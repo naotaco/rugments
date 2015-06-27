@@ -156,10 +156,10 @@ module Rugments
                 }mx do |m|
           # TODO: do this better.
           recurse m[1]
-          token Name::Function
+          token Name::Function, m[2]
           recurse m[3]
           recurse m[4]
-          token Punctuation
+          token Punctuation, m[5]
           push :statement
         end
 
